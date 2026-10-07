@@ -1,5 +1,6 @@
 package com.mycompany.resumewebapp.common;
 
+import com.mycompany.resumewebapp.student.entity.Student;
 import java.util.List;
 
 public interface CommonRepo<T> {
@@ -8,11 +9,12 @@ public interface CommonRepo<T> {
 
     public void update(T obj);
 
-    public void delete(T obj);
+    public void delete(Integer id);
 
     public void insert(T obj);
 
     public T findById(int ig);
 
-    public List<T> getList(String name, String surname);
+    public List<Student> getList(String name, String surname, String email, String university, Integer age, String password);
+
 }

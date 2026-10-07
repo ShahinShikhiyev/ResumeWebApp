@@ -1,12 +1,13 @@
 package com.mycompany.resumewebapp.teacher.repo;
 
-
 import com.mycompany.resumewebapp.common.CommonRepo;
+import com.mycompany.resumewebapp.student.entity.Student;
 import com.mycompany.resumewebapp.teacher.entity.Teacher;
 
 import java.util.List;
 
 public class TeacherRepo implements CommonRepo<Teacher> {
+
     @Override
     public List<Teacher> getList() {
         return null;
@@ -18,7 +19,7 @@ public class TeacherRepo implements CommonRepo<Teacher> {
     }
 
     @Override
-    public void delete(Teacher obj) {
+    public void delete(Integer id) {
 
     }
 
@@ -33,7 +34,7 @@ public class TeacherRepo implements CommonRepo<Teacher> {
     }
 
     @Override
-    public List<Teacher> getList(String name, String surname) {
+    public List<Student> getList(String name, String surname, String email, String university, Integer age, String password) {
         return null;
     }
 }
